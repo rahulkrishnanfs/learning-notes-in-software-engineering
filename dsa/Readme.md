@@ -2,6 +2,11 @@ If you would like to know about the roadmap what career you are looking for chec
 
 The language I have choosen is golang but you can choose any of the language you wish to choose
 
+***Visual way to learn Algorithms:***
+- [CS Vis Tool](https://csvistool.com/InsertionSort)
+- [Big O Cheat Sheet](https://www.bigocheatsheet.com/)
+
+
 **Sorting**
 
 ***Insertion Sort***
