@@ -4,6 +4,7 @@ import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
 import "./Header.css"
 import logo from "../assets/zaagpro-logo.png"
+import { Link } from 'react-router-dom';
 
 
 function Header() {
@@ -16,10 +17,10 @@ function Header() {
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto">
-            <Nav.Link href="#home">Home</Nav.Link>
-            <Nav.Link href="#blog">Blog</Nav.Link>
-            <Nav.Link href="#aboutus">Aboutus</Nav.Link>
-            <Nav.Link href="#contactus">Contact us </Nav.Link>
+            <Nav.Link href="/">Home</Nav.Link>
+            <Nav.Link as={Link} to="/blog">Blog</Nav.Link>
+            <Nav.Link as={Link} to="/aboutus">Aboutus</Nav.Link>
+            <Nav.Link as={Link} to="/contactus">Contact us </Nav.Link>
           </Nav>
           <Nav className="ms-auto">
             <Nav.Link href="#profile">Profile</Nav.Link>
