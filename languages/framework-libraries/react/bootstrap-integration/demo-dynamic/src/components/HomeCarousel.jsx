@@ -10,7 +10,7 @@ function HomeCarousel(){
         <div >
         <Carousel>
       <Carousel.Item>
-        <div className="d-block w-100" style={{height: '400px', overflow: 'hidden'}}>
+        <div className="d-block w-100" style={{height: '700px', overflow: 'hidden'}}>
           <img src={todo} alt="First slide" style={{width: '100%', height: '100%', objectFit: 'cover'}}/>
         </div>
         <Carousel.Caption>
@@ -19,7 +19,7 @@ function HomeCarousel(){
         </Carousel.Caption>
       </Carousel.Item>
       <Carousel.Item>
-        <div className="d-block w-100" style={{height: '400px', overflow: 'hidden'}}>
+        <div className="d-block w-100" style={{height: '700px', overflow: 'hidden'}}>
           <img src={aitodo} alt="Second slide" style={{width: '100%', height: '100%', objectFit: 'cover'}}/>
         </div>
         <Carousel.Caption>
@@ -28,7 +28,7 @@ function HomeCarousel(){
         </Carousel.Caption>
       </Carousel.Item>
       <Carousel.Item>
-        <div className="d-block w-100" style={{height: '400px', overflow: 'hidden'}}>
+        <div className="d-block w-100" style={{height: '700px', overflow: 'hidden'}}>
           <img src={todolistmen} alt="Third slide" style={{width: '100%', height: '100%', objectFit: 'cover'}}/>
         </div>
         <Carousel.Caption>
