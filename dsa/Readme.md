@@ -32,3 +32,6 @@ Basic logic:
                 * Asumming that array is already sorted so that inner loop wont execute it and only comparison happens so the time complexity is **O(n)**
             - Average Case 
             - Worst Case 
+2) Merge Sort
+3) Bubble Sort
+4) Quick Sort

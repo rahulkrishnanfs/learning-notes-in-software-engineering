@@ -1,0 +1,2 @@
+- Tensor core 
+- Attention deigns -> multi heas / ground Query / Multi Query  

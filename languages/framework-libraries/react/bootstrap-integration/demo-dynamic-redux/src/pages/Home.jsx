@@ -6,8 +6,9 @@ import Card from 'react-bootstrap/Card';
 import { Link } from 'react-router-dom';
 import { useState } from 'react';
 import { addToCart } from '../redux/cartSlice'; //import action to dispatch from there
+import { useDispatch } from 'react-redux';
 
-function Home({ products, handleAddToCart }) {
+function Home({ products }) {
   // console.log(products);
   // console.log("--------------------------------", products);
   // const [ cartItems, setCartItems] = useState(0);
@@ -18,7 +19,12 @@ function Home({ products, handleAddToCart }) {
   //   console.log("Add to cart clicked")
   // }
   // console.log("cart items is ---->>",cartItems)
+  const dispatch = useDispatch();
 
+  const handleAddToCart = (product)=>{
+
+    dispatch(addToCart(product));
+  }
   return (
     <>
       <HomeCarousel />
@@ -36,7 +42,7 @@ function Home({ products, handleAddToCart }) {
                   <Card.Text>
                     {product.productDescription}
                   </Card.Text>
-                  <Button variant="primary" onClick={handleAddToCart}>Add to Cart</Button>
+                  <Button variant="primary" onClick={()=>handleAddToCart(product)}>Add to Cart</Button>
                 </Card.Body>
               </Card>
 

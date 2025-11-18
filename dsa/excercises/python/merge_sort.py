@@ -28,7 +28,8 @@ def mergeSort(arr):
 		return merge(left,right)
 
 
-arr = [3,7,4,2,5,6,1]
+# arr = [3,7,4,2,5,6,1]
+arr = [2,9,12,5,6,7,1]
 
 sort_arr = mergeSort(arr)
 

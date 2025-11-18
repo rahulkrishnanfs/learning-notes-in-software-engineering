@@ -9,15 +9,16 @@ import Contactus from "./pages/Contactus"
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import ProductDetails from "./pages/ProductDetails"
 import { useState } from 'react';
+import Cart from './pages/Cart';
 
 function App() {
   const [ cartItems, setCartItems] = useState(0);
 
-  const handleAddToCart = ()=>{
-    setCartItems(cartItems+1)
+  // const handleAddToCart = ()=>{
+  //   setCartItems(cartItems+1)
     
-    console.log("Add to cart clicked")
-  }
+  //   console.log("Add to cart clicked")
+  // }
 
   const products = [
     {
@@ -90,11 +91,12 @@ function App() {
       <BrowserRouter>
         <Header cartItems={cartItems}/>
         <Routes>
-          <Route path="/" element={<Home products = {products} y = {""} handleAddToCart={handleAddToCart}/>} />
+          <Route path="/" element={<Home products = {products} y = {""} />} />
           <Route path="/aboutus" element={<Aboutus />} />
           <Route path="/blog" element={<Blog />} />
           <Route path="/contactus" element={<Contactus />} /> 
-          <Route path="/product/:id" element={<ProductDetails products={products} handleAddToCart={handleAddToCart} />} />
+          <Route path="/product/:id" element={<ProductDetails products={products}  />} />
+          <Route path="/cart" element={<Cart/>} />
         </Routes>
       </BrowserRouter>
       {/* <HomeCarousel/> */}
